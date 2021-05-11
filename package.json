@@ -1,0 +1,18 @@
+{
+  "name": "ganache-bug-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "devchain": "node ./scripts/ganache-dev-provider.js & echo \"$!\" > /tmp/background-ganache.pid",
+    "test": "npm run devchain & ./node_modules/.bin/truffle test ./test/index.test.js; kill -3 $(</tmp/background-ganache.pid)"
+  },
+  "devDependencies": {
+    "ganache-core": "^2.13.2",
+    "truffle": "^5.3.4",
+    "@compound-finance/compound-js": "^0.2.8"
+  },
+  "resolutions": {
+    "**/ganache-core": "github:compound-finance/ganache-core.git#jflatow/unbreak-fork"
+  }
+}
