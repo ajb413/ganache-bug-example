@@ -8,11 +8,8 @@
     "test": "npm run devchain & ./node_modules/.bin/truffle test ./test/index.test.js; kill -3 $(</tmp/background-ganache.pid)"
   },
   "devDependencies": {
+    "@compound-finance/compound-js": "^0.2.8",
     "ganache-core": "^2.13.2",
-    "truffle": "^5.3.4",
-    "@compound-finance/compound-js": "^0.2.8"
-  },
-  "resolutions": {
-    "**/ganache-core": "github:compound-finance/ganache-core.git#jflatow/unbreak-fork"
+    "truffle": "^5.3.4"
   }
 }

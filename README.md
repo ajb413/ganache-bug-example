@@ -1,6 +1,6 @@
 # Ganache Bug
 
-Can't seem to run `exchangeRateCurrent` without hitting `revert re-entered` whenforking mainnet.
+Can't seem to run Compound cToken `exchangeRateCurrent` ([this](https://github.com/compound-finance/compound-protocol/blob/master/contracts/CToken.sol#L318)) without hitting `revert re-entered` when forking mainnet. Using Node.js 12.14.1. MacBook Pro (15-inch, 2019) on macOS Big Sur 11.3 (20E232).
 
 For `ganache-core` setup, see `scripts/` folder.
 
@@ -13,6 +13,6 @@ DEV_ETH_MNEMONIC="earn debate...."
 
 Run
 ```bash
-yarn install
-yarn test
+npm install
+npm test
 ```
