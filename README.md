@@ -1,6 +1,8 @@
 # Ganache Bug
 
-Can't seem to run `exchangeRateCurrent` without hitting `revert re-entered`.
+Can't seem to run `exchangeRateCurrent` without hitting `revert re-entered` whenforking mainnet.
+
+For `ganache-core` setup, see `scripts/` folder.
 
 Environment variables:
 
