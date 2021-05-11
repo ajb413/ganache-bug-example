@@ -1,7 +1,9 @@
+// SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.0;
 
 interface ICToken {
-  function exchangeRateCurrent() external returns (uint256);
+  function exchangeRateCurrent() external returns (uint);
 }
 
 contract MyContract {
